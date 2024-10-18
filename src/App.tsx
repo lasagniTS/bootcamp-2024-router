@@ -1,11 +1,13 @@
-import './App.css'
+import "./App.css";
+import { Home } from "./pages/home";
+import { Profile } from "./pages/profile";
+
 
 function App() {
-  return (
-    <h1 className="font-bold text-3xl underline">
-      Hello world!
-    </h1>
-  )
+	return <>
+    
+    <Home />
+  </>
 }
 
-export default App
+export default App;
