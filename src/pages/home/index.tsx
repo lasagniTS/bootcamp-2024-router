@@ -1,5 +1,5 @@
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
+import { Footer } from "../../components/footer";
+import { Navbar } from "../../components/navbar";
 
 export const Home = () => {
 	return (
@@ -47,7 +47,7 @@ export const Home = () => {
 							x="0"
 							y="0"
 						>
-              <title>A</title>
+							<title>A</title>
 							<polygon className="fill-current text-gray-300" points="2560 0 2560 100 0 100" />
 						</svg>
 					</div>
@@ -130,7 +130,7 @@ export const Home = () => {
 												top: "-94px",
 											}}
 										>
-                      <title>BB</title>
+											<title>BB</title>
 											<polygon points="-30,95 583,95 583,65" className="fill-current text-pink-600" />
 										</svg>
 										<h4 className="font-bold text-white text-xl">Top Notch Services</h4>
@@ -159,7 +159,7 @@ export const Home = () => {
 							x="0"
 							y="0"
 						>
-              <title>asfa</title>
+							<title>asfa</title>
 							<polygon className="fill-current text-white" points="2560 0 2560 100 0 100" />
 						</svg>
 					</div>
@@ -237,7 +237,6 @@ export const Home = () => {
 									<div className="pt-6 text-center">
 										<h5 className="font-bold text-xl">Ryan Tompson</h5>
 										<p className="mt-1 font-semibold text-gray-500 text-sm uppercase">Web Developer</p>
-										
 									</div>
 								</div>
 							</div>
@@ -252,7 +251,6 @@ export const Home = () => {
 									<div className="pt-6 text-center">
 										<h5 className="font-bold text-xl">Romina Hadid</h5>
 										<p className="mt-1 font-semibold text-gray-500 text-sm uppercase">Marketing Specialist</p>
-										
 									</div>
 								</div>
 							</div>
@@ -267,7 +265,6 @@ export const Home = () => {
 									<div className="pt-6 text-center">
 										<h5 className="font-bold text-xl">Alexa Smith</h5>
 										<p className="mt-1 font-semibold text-gray-500 text-sm uppercase">UI/UX Designer</p>
-										
 									</div>
 								</div>
 							</div>
@@ -282,7 +279,6 @@ export const Home = () => {
 									<div className="pt-6 text-center">
 										<h5 className="font-bold text-xl">Jenna Kardi</h5>
 										<p className="mt-1 font-semibold text-gray-500 text-sm uppercase">Founder and CEO</p>
-										
 									</div>
 								</div>
 							</div>
@@ -304,7 +300,7 @@ export const Home = () => {
 							x="0"
 							y="0"
 						>
-              <title>i don't know</title>
+							<title>i don't know</title>
 							<polygon className="fill-current text-gray-900" points="2560 0 2560 100 0 100" />
 						</svg>
 					</div>
@@ -405,4 +401,4 @@ export const Home = () => {
 			<Footer />
 		</>
 	);
-}
+};

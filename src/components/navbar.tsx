@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Navbar(props: { transparent: boolean }) {
+export const Navbar = (props: { transparent: boolean }) => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
 		<>
@@ -49,8 +49,6 @@ export default function Navbar(props: { transparent: boolean }) {
 							</li>
 						</ul>
 						<ul className="flex list-none flex-col lg:ml-auto lg:flex-row">
-							
-
 							<li className="flex items-center">
 								<button
 									className={`${
@@ -70,4 +68,4 @@ export default function Navbar(props: { transparent: boolean }) {
 			</nav>
 		</>
 	);
-}
+};

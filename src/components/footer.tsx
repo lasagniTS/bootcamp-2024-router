@@ -1,4 +1,4 @@
-export default function Footer() {
+export const Footer = () => {
 	return (
 		<>
 			<footer className="relative bg-gray-300 pt-8 pb-6">
@@ -122,4 +122,4 @@ export default function Footer() {
 			</footer>
 		</>
 	);
-}
+};
