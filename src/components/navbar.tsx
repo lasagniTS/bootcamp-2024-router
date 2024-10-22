@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export const Navbar = (props: { transparent: boolean }) => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
+	
 	return (
 		<>
 			<nav
@@ -13,7 +14,7 @@ export const Navbar = (props: { transparent: boolean }) => {
 					<div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
 						<a
 							className={`${props.transparent ? "text-white" : "text-gray-800"} mr-4 inline-block whitespace-nowrap py-2 font-bold text-sm uppercase leading-relaxed`}
-							href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+							href="/"
 						>
 							Tailwind Starter Kit
 						</a>
