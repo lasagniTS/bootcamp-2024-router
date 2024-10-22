@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 export const Navbar = (props: { transparent: boolean }) => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	
@@ -12,12 +12,9 @@ export const Navbar = (props: { transparent: boolean }) => {
 			>
 				<div className="container mx-auto flex flex-wrap items-center justify-between px-4">
 					<div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
-						<a
-							className={`${props.transparent ? "text-white" : "text-gray-800"} mr-4 inline-block whitespace-nowrap py-2 font-bold text-sm uppercase leading-relaxed`}
-							href="/"
-						>
-							Tailwind Starter Kit
-						</a>
+						<Link to ="/" className={`${props.transparent ? "text-white" : "text-gray-800"} mr-4 inline-block whitespace-nowrap py-2 font-bold text-sm uppercase leading-relaxed`}>
+						Tailwind Starter Kit
+						</Link>
 						<button
 							className="block cursor-pointer rounded border border-transparent border-solid bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none lg:hidden"
 							type="button"
@@ -32,21 +29,19 @@ export const Navbar = (props: { transparent: boolean }) => {
 					>
 						<ul className="mr-auto flex list-none flex-col lg:flex-row">
 							<li className="flex items-center">
-								<a
-									className={`${
+							
+									<Link to ="/profile" className={`${
 										props.transparent
 											? "text-gray-800 lg:text-white lg:hover:text-gray-300"
 											: "text-gray-800 hover:text-gray-600"
-									} flex items-center px-3 py-4 font-bold text-xs uppercase lg:py-2`}
-									href="/profile"
-								>
+									} flex items-center px-3 py-4 font-bold text-xs uppercase lg:py-2`}>
 									<i
 										className={`${
 											props.transparent ? "text-gray-500 lg:text-gray-300" : "text-gray-500"
 										} far fa-file-alt mr-2 text-lg leading-lg`}
 									/>{" "}
 									Docs
-								</a>
+									</Link> 
 							</li>
 						</ul>
 						<ul className="flex list-none flex-col lg:ml-auto lg:flex-row">

@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer";
 import { Navbar } from "../../components/navbar";
 
-export const Home = () => {
+const Home = () => {
 	return (
 		<>
 			<Navbar transparent={true} />
@@ -402,3 +402,6 @@ export const Home = () => {
 		</>
 	);
 };
+
+
+export default Home;

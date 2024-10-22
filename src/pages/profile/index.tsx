@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer";
 import { Navbar } from "../../components/navbar";
 
-export const Profile = () => {
+export default function Profile () {
 	return (
 		<>
 			<Navbar transparent={true} />
