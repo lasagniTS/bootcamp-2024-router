@@ -1,7 +1,7 @@
 import { Footer } from "../../components/footer";
 import { Navbar } from "../../components/navbar";
 
-export const Profile = () => {
+const Profile = () => {
 	return (
 		<>
 			<Navbar transparent={true} />
@@ -115,3 +115,6 @@ export const Profile = () => {
 		</>
 	);
 };
+
+
+export default Profile;
